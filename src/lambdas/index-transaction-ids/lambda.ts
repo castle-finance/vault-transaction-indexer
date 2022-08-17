@@ -43,7 +43,7 @@ export const handler = async (
         );
 
         // Get the earliest raw transaction in the database
-        const earliestTransactionInDB = await fetchTransactionFromDynamo({
+        const oldestTransactionInDB = await fetchTransactionFromDynamo({
             db,
             tableName: TABLE_NAME,
             vaultID: VAULT_ID,
@@ -52,7 +52,7 @@ export const handler = async (
 
         // If there are no transactions -> queue up 10 newest
         // transactions to be downloaded into DB and close the lambda
-        if (earliestTransactionInDB === null) {
+        if (oldestTransactionInDB === null) {
             console.log("No transactions found - queue up 10 newest TXs.");
             await addTxsToIntakeQueue({
                 sns,
@@ -62,16 +62,31 @@ export const handler = async (
             return;
         }
 
-        // Log earliestTransactionInDB data
-        console.log("earliestTransactionInDB");
-        console.log(JSON.stringify(earliestTransactionInDB, null, 4));
+        // Log oldestTransactionInDB data
+        console.log("oldestTransactionInDB");
+        console.log(JSON.stringify(oldestTransactionInDB, null, 4));
 
-        // Fetch transactions that are before earliestTransactionInDB
+        // If oldestTransactionInDB is included in latest 10 transactions from Solscan,
+        // filter that list and insert into intake queue to ensure that everything is up-to-date
+        if (latestTransactionHashes.includes(oldestTransactionInDB.txHash)) {
+            console.log("Queue up newest TXs, if any.");
+            await addTxsToIntakeQueue({
+                sns,
+                snsArn: SNS_ARN,
+                transactions: filterTransactions({
+                    txHashToSlice: oldestTransactionInDB.txHash,
+                    txHashes: latestTransactionHashes,
+                }),
+            });
+            return;
+        }
+
+        // Fetch transactions that are before oldestTransactionInDB
         const earlierTransactionEvents: RawTransaction[] =
             await fetchTransactionsFromSolscan({
                 vaultID: VAULT_ID,
                 cluster: CLUSTER,
-                beforeTransactionHash: earliestTransactionInDB.txHash,
+                beforeTransactionHash: oldestTransactionInDB.txHash,
             });
 
         // Queue up earlier transactions if they're available
