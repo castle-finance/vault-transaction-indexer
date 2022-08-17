@@ -3,7 +3,10 @@
 Transacting indexing and processing pipeline for [Castle Labs](https://castle.finance) vaults. Built with AWS CDK + TypeScript.
 
 <!-- **Architecture diagram** -->
-<!-- ![Architecture Diagram](assets/architecture.png) -->
+<!-- Edit here: -->
+<!-- https://app.cloudcraft.co/blueprint/a4a13283-2596-4c25-bff4-0f8b57371760 -->
+
+![Architecture Diagram](assets/architecture.png)
 
 **Pre-requisites**
 
