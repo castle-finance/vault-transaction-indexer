@@ -17,16 +17,6 @@
   dependencies:
     "@aws-cdk/cloudformation-diff" "2.35.0"
 
-"@aws-cdk/aws-apigatewayv2-alpha@^2.35.0-alpha.0":
-  version "2.35.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-apigatewayv2-alpha/-/aws-apigatewayv2-alpha-2.35.0-alpha.0.tgz#0165cdc36fb7f28f48d239f3fe393ec26d639baf"
-  integrity sha512-FwAoXwAbEmOZJcGTXYqk9BCPQAFxQkLWex2j68O0+Qdnw2Z8z/fbzy4NTXIzdmr1hFL9wj3WT301XWjpYm5HbA==
-
-"@aws-cdk/aws-apigatewayv2-integrations-alpha@^2.35.0-alpha.0":
-  version "2.35.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-apigatewayv2-integrations-alpha/-/aws-apigatewayv2-integrations-alpha-2.35.0-alpha.0.tgz#745daf2b11bd4af650dd4b1ea4785a83f23c18ad"
-  integrity sha512-wfHgUb34eYTZ1qNSVTEdAev6BJ7/n/J2Y3GGlatHnv65x4QRwMo31fjc/pZseuU2tfdIQ0PwuES5NsgXnr9LAA==
-
 "@aws-cdk/cfnspec@2.35.0":
   version "2.35.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/cfnspec/-/cfnspec-2.35.0.tgz#4cfa4250ec4c67b17920c55420a309533ac04302"
@@ -326,7 +316,7 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@castlefinance/vault-core@~0.2.3":
+"@castlefinance/vault-core@0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@castlefinance/vault-core/-/vault-core-0.2.3.tgz#2976ed6268ac66d6738ff40147503d15c48ae302"
   integrity sha512-RWTDUJ2FldLZndXZuA9E9uDRfyH5RHYKYKbrlQpwDuYnSULwuzewf6lLvvKka0rXu2bMkEkvnjx5v2zNz66gSA==

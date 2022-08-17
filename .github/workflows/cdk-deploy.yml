@@ -1,0 +1,61 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# name: Deploy CDK Stack
+
+# on:
+#   push:
+#     branches:
+#       - main
+#       - dev
+
+# env:
+#   AWS_REGION: us-east-1
+
+# jobs:
+#   deploy:
+#     name: Deploy
+#     runs-on: ubuntu-latest
+#     environment: production
+
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v2
+
+#       - name: Install aws-cdk CLI
+#         run: npm install -g aws-cdk@latest
+
+#       - name: Install project dependencies
+#         run: "yarn install"
+
+#       - name: Install transaction-indexer-lib dependencies
+#         run: "yarn --cwd ./src/lib install"
+
+#       - name: Build transaction-indexer-lib package
+#         run: "yarn --cwd ./src/lib build"
+
+#       - name: Install download-raw-transaction lambda dependencies
+#         run: "yarn --cwd ./src/download-raw-transaction install"
+
+#       - name: Install index-transaction-ids lambda dependencies
+#         run: "yarn --cwd ./src/index-transaction-ids install"
+
+#       - name: Install normalize-raw-transactio lambda dependencies
+#         run: "yarn --cwd ./src/normalize-raw-transactio install"
+
+#       - name: Build TypeScript
+#         run: "yarn build"
+
+#       - name: Configure AWS credentials
+#         uses: aws-actions/configure-aws-credentials@13d241b293754004c80624b5567555c4a39ffbe3
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: ${{ secrets.AWS_REGION }}
+
+#       - name: Deploy CDK stack
+#         run: cdk deploy --require-approval never
+#         # env:
+#         #   DATADOG_API_KEY: ${{ secrets.DATADOG_API_KEY }}
