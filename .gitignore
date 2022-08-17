@@ -1,0 +1,7 @@
+src/**/*.js
+index.js
+node_modules/
+cdk.out
+data/
+keypair.json
+.DS_Store

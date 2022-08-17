@@ -18,7 +18,7 @@ Indexes transactions for a single vault.
 
     -   Fetch the _newest_ transaction stored in DynamoDB.
 
-        -   If the 10 most recent transactions from Solscan include the _newest_ transaction stored in DynamoDB, queue up any transactions newer than the newest transaction stored in DynamoDB, then exit.
+        -   If the 10 most recent transactions from Solscan includes the _newest_ transaction stored in DynamoDB, queue up any transactions newer than the newest transaction stored in DynamoDB, then exit.
 
         -   If not, query for subsequent pages of transactions until the page containing the newest transaction stored in DynamoDB is found - then, the transactions from this crawl are added to the intake queue, then exit.
 
