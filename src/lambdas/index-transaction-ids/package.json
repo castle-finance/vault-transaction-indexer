@@ -1,0 +1,10 @@
+{
+    "name": "index-raw-transactions",
+    "version": "0.1.0",
+    "license": "UNLICENCED",
+    "dependencies": {
+        "aws-sdk": "^2.1188.0",
+        "@castlefinance/vault-core": "0.2.3",
+        "transaction-indexer-lib": "file:../../shared"
+    }
+}
