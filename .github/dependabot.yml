@@ -11,18 +11,7 @@ updates:
       schedule:
           interval: "daily"
       allow:
-          - dependency-name: "@aws-cdk/assert"
-          - dependency-name: "@types/jest"
-          - dependency-name: "@types/node"
-          - dependency-name: "@types/puppeteer"
-          - dependency-name: "aws-cdk-lib"
-          - dependency-name: "constructs"
-          - dependency-name: "jest"
-          - dependency-name: "puppeteer-lambda"
-          - dependency-name: "ts-jest"
-          - dependency-name: "typescript"
-          # Allow updates for all Castle packages
-          - dependency-name: "@castlefinance*"
+          - dependency-name: "*"
       ignore:
           - dependency-name: "@castlefinance*"
             update-types: ["version-update:semver-major"]
@@ -41,7 +30,7 @@ updates:
         schedule:
             interval: "daily"
         allow:
-            - dependency-name: "aws-sdk"
+            - dependency-name: "*"
 
     # Update dependencies for download-raw-transaction lambda
     - package-ecosystem: "npm"
@@ -49,7 +38,7 @@ updates:
         schedule:
             interval: "daily"
         allow:
-            - dependency-name: "aws-sdk"
+            - dependency-name: "*"
 
     # Update dependencies for index-transaction-ids lambda
     - package-ecosystem: "npm"
@@ -57,4 +46,4 @@ updates:
         schedule:
             interval: "daily"
         allow:
-            - dependency-name: "aws-sdk"
+            - dependency-name: "*"
