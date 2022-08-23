@@ -9,41 +9,41 @@ updates:
     - package-ecosystem: "npm"
       directory: "/"
       schedule:
-          interval: "daily"
+        interval: "daily"
       allow:
-          - dependency-name: "*"
+        - dependency-name: "*"
       ignore:
-          - dependency-name: "@castlefinance*"
-            update-types: ["version-update:semver-major"]
+        - dependency-name: "@castlefinance*"
+          update-types: ["version-update:semver-major"]
 
     # Update dependencies for src/shared package
     - package-ecosystem: "npm"
-        directory: "/src/shared"
-        schedule:
-            interval: "daily"
-        allow:
-            - dependency-name: "*"
+      directory: "/src/shared"
+      schedule:
+        interval: "daily"
+      allow:
+        - dependency-name: "*"
 
     # Update dependencies for normalize-raw-transaction lambda
     - package-ecosystem: "npm"
-        directory: "/src/lambdas/normalize-raw-transaction"
-        schedule:
-            interval: "daily"
-        allow:
-            - dependency-name: "*"
+      directory: "/src/lambdas/normalize-raw-transaction"
+      schedule:
+        interval: "daily"
+      allow:
+        - dependency-name: "*"
 
     # Update dependencies for download-raw-transaction lambda
     - package-ecosystem: "npm"
-        directory: "/src/lambdas/download-raw-transaction"
-        schedule:
-            interval: "daily"
-        allow:
-            - dependency-name: "*"
+      directory: "/src/lambdas/download-raw-transaction"
+      schedule:
+        interval: "daily"
+      allow:
+        - dependency-name: "*"
 
     # Update dependencies for index-transaction-ids lambda
     - package-ecosystem: "npm"
-        directory: "/src/lambdas/index-transaction-ids"
-        schedule:
-            interval: "daily"
-        allow:
-            - dependency-name: "*"
+      directory: "/src/lambdas/index-transaction-ids"
+      schedule:
+        interval: "daily"
+      allow:
+        - dependency-name: "*"
