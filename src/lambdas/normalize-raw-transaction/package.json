@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "license": "UNLICENCED",
     "dependencies": {
-        "aws-sdk": "^2.1206.0",
+        "aws-sdk": "^2.1228.0",
         "transaction-indexer-lib": "file:../../shared"
     }
 }
