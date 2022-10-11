@@ -1347,9 +1347,9 @@ domexception@^2.0.1:
     webidl-conversions "^5.0.0"
 
 electron-to-chromium@^1.4.202:
-  version "1.4.274"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.274.tgz#74369ac6f020c3cea7c77ec040ddf159fe226233"
-  integrity sha512-Fgn7JZQzq85I81FpKUNxVLAzoghy8JZJ4NIue+YfUYBbu1AkpgzFvNwzF/ZNZH9ElkmJD0TSWu1F2gTpw/zZlg==
+  version "1.4.278"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.278.tgz#b527a64df8a23dd46a8c751a81c6648d528c5e1d"
+  integrity sha512-i+0+t/UVCqp9khP+hswZQbG31LnsYWGwyI9zhqZkyPok7k57W0UhMaxODMp3TeoNFhyUtB5OI4ppO/OSD9gaYg==
 
 emittery@^0.7.1:
   version "0.7.2"
