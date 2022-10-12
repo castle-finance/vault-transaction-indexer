@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@castlefinance/vault-core@0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@castlefinance/vault-core/-/vault-core-0.2.3.tgz#2976ed6268ac66d6738ff40147503d15c48ae302"
-  integrity sha512-RWTDUJ2FldLZndXZuA9E9uDRfyH5RHYKYKbrlQpwDuYnSULwuzewf6lLvvKka0rXu2bMkEkvnjx5v2zNz66gSA==
+"@castlefinance/vault-core@0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@castlefinance/vault-core/-/vault-core-0.2.5.tgz#17f23101640e54541d860957b9ee1a89aae488cf"
+  integrity sha512-Nz0s406DUd8vXP5BvS3SfIjFU322iAc6g5PHXhN2caBdS1hCAb6/8SGNQSH87azPjgBKsO/k/Aw0weZqSEFbXw==
 
 ajv@^6.12.3:
   version "6.12.6"

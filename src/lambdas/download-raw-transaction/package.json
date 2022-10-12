@@ -4,7 +4,7 @@
     "license": "UNLICENCED",
     "dependencies": {
         "aws-sdk": "^2.1231.0",
-        "@castlefinance/vault-core": "0.2.3",
+        "@castlefinance/vault-core": "0.2.5",
         "transaction-indexer-lib": "file:../../shared"
     }
 }
