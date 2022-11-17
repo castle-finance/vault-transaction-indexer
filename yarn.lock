@@ -316,10 +316,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@castlefinance/vault-core@0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@castlefinance/vault-core/-/vault-core-0.2.3.tgz#2976ed6268ac66d6738ff40147503d15c48ae302"
-  integrity sha512-RWTDUJ2FldLZndXZuA9E9uDRfyH5RHYKYKbrlQpwDuYnSULwuzewf6lLvvKka0rXu2bMkEkvnjx5v2zNz66gSA==
+"@castlefinance/vault-core@0.2.6":
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/@castlefinance/vault-core/-/vault-core-0.2.6.tgz#fe531b8c215a99eba2634e3aecc3e10c8323af23"
+  integrity sha512-JbCDq9BSJYKNfOgYn6smwNJqEtFO8Cp7ZEkJ5FDqz08x/JwEyIiGouGqatpXLaxcLB/VGjDheFo5FbAJz7wQDQ==
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
