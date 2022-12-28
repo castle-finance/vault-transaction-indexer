@@ -22,7 +22,7 @@
     },
     "dependencies": {
         "@castlefinance/vault-core": "0.2.3",
-        "aws-cdk-lib": "^2.45.0",
+        "aws-cdk-lib": "^2.57.0",
         "aws-sdk": "^2.1231.0"
     }
 }
